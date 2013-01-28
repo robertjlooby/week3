@@ -1,4 +1,4 @@
-<h1>Edit photo <%= params[:id] %>:<h1>
+<h1>Edit photo <%= params[:id] %> here<h1>
 
 <%= form_tag("/photos/" + params[:id], :method => :put) do%>
 	<p>

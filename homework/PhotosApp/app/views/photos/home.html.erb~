@@ -1,0 +1,4 @@
+<h1>Welcome to my photo app!<h1>
+
+<%= link_to "Home", home_path %>
+<%= link_to "Add a new photo", new_photo_path %>

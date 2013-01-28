@@ -1,0 +1,11 @@
+PhotosApp::Application.routes.draw do
+
+	resources :photos
+	#get "/photos/:id", :controller => "photos", :action => "display", :as => "display"
+	
+	#get "/photos", :controller => "photos", :action => "home", :as => "home"
+	
+	#get "/photos/new", :controller => "photos", :action => "new", :as => "new"
+	
+	root :to => "photos#index"
+end

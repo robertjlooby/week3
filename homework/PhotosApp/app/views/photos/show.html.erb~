@@ -1,3 +1,5 @@
+<h1>Photo <%= params[:id] %> displayed here!<h1>
+
 <h2><%= @photo.title %><h2>
 <img src="<%= @photo.url %>" alt="<%= @photo.title %>" width = "100%" height = "auto" />
 <p><%= @photo.caption %></p>
