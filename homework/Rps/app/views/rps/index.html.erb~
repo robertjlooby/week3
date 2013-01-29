@@ -1,0 +1,46 @@
+<h1>Rock, Paper, Scissors</h1>
+<% if params[:choose] == nil %>
+	<h2>Let's Play! Choose one:</h2>
+	<div>
+		<%= link_to image_tag("rock.jpg", :size => "400x400"), rps_path(:choose => "rock") %>
+		<%= link_to image_tag("paper.jpg", :size => "400x400"), rps_path( :choose => "paper") %>
+		<%= link_to image_tag("scissors.jpg", :size => "400x400"), rps_path( :choose => "scissors") %>
+	</div>
+<% elsif params[:choose] == "rock" %>
+	<% if @comp == "rock" %>
+		<h2>It's a tie!</h2>
+	<% elsif @comp == "paper" %>
+		<h2>You lose!</h2>
+	<% elsif @comp == "scissors" %>
+		<h2>You win!</h2>
+	<% end %>
+	<p><%= link_to "Play again", rps_path %></p>
+	<%= image_tag("rock.jpg", :size => "400x400") %>
+	<%= image_tag(@comp + ".jpg", :size=> "400x400") %>
+<% elsif params[:choose] == "paper" %>
+	<% if @comp == "rock" %>
+		<h2>You win!</h2>
+	<% elsif @comp == "paper" %>
+		<h2>It's a tie!</h2>
+	<% elsif @comp == "scissors" %>
+		<h2>You lose!</h2>
+	<% end %>
+	<p><%= link_to "Play again", rps_path %></p>
+	<%= image_tag("paper.jpg", :size => "400x400") %>
+	<%= image_tag(@comp + ".jpg", :size=> "400x400") %>
+<% elsif params[:choose] == "scissors" %>
+	<% if @comp == "rock" %>
+		<h2>You lose!</h2>
+	<% elsif @comp == "paper" %>
+		<h2>You win!</h2>
+	<% elsif @comp == "scissors" %>
+		<h2>It's a tie!</h2>
+	<% end %>
+	<p><%= link_to "Play again", rps_path %></p>
+	<%= image_tag("scissors.jpg", :size => "400x400") %>
+	<%= image_tag(@comp + ".jpg", :size=> "400x400") %>
+<% else #:choose is not valid %>
+	<h2>Click on an image to play the game!</h2>
+	<p><%= link_to "Play again", rps_path %></p>
+	<%= image_tag("awk.jpeg", :size => "400x243") %>
+<% end %>

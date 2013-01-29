@@ -1,0 +1,32 @@
+<h1>Dice Game</h1>
+<div>
+	<%= image_tag(@die1.to_s + ".png") %>
+	<%= image_tag(@die2.to_s + ".png") %>
+</div>
+<% if params[:point] == nil %>
+	<% point = @die1 + @die2 %>
+	<% if point == 7 || point == 11 %>
+		<h2>You win!</h2>
+		<%= link_to "Play again", dice_path %>
+	<% elsif point == 2 || point == 3 || point == 12 %>
+		<h2>You lose!</h2>
+		<%= link_to "Play again", dice_path %>
+	<% else %>
+		<h2>You're point is now <%= point %>.</h2>
+		<h3>Now try to get <%= point %> again before you roll a 7.</h3>
+		<%= link_to "Roll the dice", roll_path(:point => point) %>
+	<% end %>
+<% else %>
+	<% total = @die1 + @die2 %>
+	<% if total == 7 %>
+		<h2>You lose!</h2>
+		<%= link_to "Play again", dice_path %>
+	<% elsif total == params[:point].to_i %>
+		<h2>You win!</h2>
+		<%= link_to "Play again", dice_path %>
+	<% else %>
+		<h2>Your point is <%= params[:point] %>. You can roll again.</h2>
+		<%= link_to "Roll again", roll_path(:point => params[:point]) %>
+	<% end %>
+<% end %>
+

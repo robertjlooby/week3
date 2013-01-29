@@ -9,4 +9,6 @@
 
 <%= link_to "Home", photos_path %>
 <%= link_to "Add a new photo", new_photo_path %>
-<%= link_to_if(@max.to_i > 0, "Browse photos", photo_path(@photos[0][:id])) %>
+<%= if @max.to_i > 0
+	link_to "Browse photos", photo_path(@photos[0][:id])
+end %>

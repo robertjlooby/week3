@@ -107,7 +107,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/robert/Documents/CSPP52553WebDev/week3/homework/PhotosApp/app/views/photos/index.html.erb" added="2013-01-27T20:53:03Z" modified="2013-01-28T05:47:55Z" visited="2013-01-27T21:05:20Z">
+  <bookmark href="file:///home/robert/Documents/CSPP52553WebDev/week3/homework/PhotosApp/app/views/photos/index.html.erb" added="2013-01-27T20:53:03Z" modified="2013-01-28T16:19:58Z" visited="2013-01-27T21:05:20Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/html"/>
@@ -115,7 +115,7 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-28T05:47:55Z" count="12"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-28T16:19:58Z" count="13"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -172,7 +172,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/robert/Documents/CSPP52553WebDev/week3/homework/PhotosApp/app/models/photo.rb" added="2013-01-27T21:05:20Z" modified="2013-01-27T21:05:20Z" visited="2013-01-27T21:05:20Z">
+  <bookmark href="file:///home/robert/Documents/CSPP52553WebDev/week3/homework/PhotosApp/app/models/photo.rb" added="2013-01-27T21:05:20Z" modified="2013-01-28T16:15:43Z" visited="2013-01-27T21:05:20Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-ruby"/>
@@ -180,7 +180,7 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-27T21:05:20Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-28T16:15:43Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -211,7 +211,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/robert/Documents/CSPP52553WebDev/week3/homework/PhotosApp/app/views/photos/show.html.erb" added="2013-01-27T21:33:58Z" modified="2013-01-28T05:46:56Z" visited="2013-01-27T21:33:58Z">
+  <bookmark href="file:///home/robert/Documents/CSPP52553WebDev/week3/homework/PhotosApp/app/views/photos/show.html.erb" added="2013-01-27T21:33:58Z" modified="2013-01-28T16:20:03Z" visited="2013-01-27T21:33:58Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -219,7 +219,7 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-28T05:46:56Z" count="50"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-28T16:20:03Z" count="54"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -237,7 +237,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/robert/Documents/CSPP52553WebDev/week3/homework/PhotosApp/db/seeds.rb" added="2013-01-27T22:03:43Z" modified="2013-01-28T05:58:30Z" visited="2013-01-27T22:03:43Z">
+  <bookmark href="file:///home/robert/Documents/CSPP52553WebDev/week3/homework/PhotosApp/db/seeds.rb" added="2013-01-27T22:03:43Z" modified="2013-01-28T16:52:41Z" visited="2013-01-27T22:03:43Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-ruby"/>
@@ -245,7 +245,7 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-28T05:58:30Z" count="3"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-28T16:52:41Z" count="28"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -311,6 +311,19 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-27T22:30:36Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/robert/Documents/CSPP51044C++/hw3/hw3_1.txt" added="2013-01-28T17:35:53Z" modified="2013-01-28T17:36:22Z" visited="2013-01-28T17:35:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-01-28T17:36:22Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>

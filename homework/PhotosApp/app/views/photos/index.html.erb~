@@ -2,7 +2,8 @@
 
 <p><%= flash[:info] %></p>
 
-<p><% @photos.each do |photo| %>
+<p>Click on an ID number to view a photo :
+	<% @photos.each do |photo| %>
 	<%= link_to photo.id, photo_path(photo.id) %>
 <% end %></p>
 
