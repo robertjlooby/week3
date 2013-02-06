@@ -1,7 +1,5 @@
 <h1>Welcome to my photo app!<h1>
 
-<p><%= flash[:info] %></p>
-
 <p>Click on an ID number to view a photo :
 	<% @photos.each do |photo| %>
 	<%= link_to photo.id, photo_path(photo.id) %>
@@ -9,4 +7,6 @@
 
 <%= link_to "Home", photos_path %>
 <%= link_to "Add a new photo", new_photo_path %>
-<%= link_to_if(@max.to_i > 0, "Browse photos", photo_path(@photos[0][:id])) %>
+<%= if @max.to_i > 0
+	link_to "Browse photos", photo_path(@photos[0][:id])
+end %>

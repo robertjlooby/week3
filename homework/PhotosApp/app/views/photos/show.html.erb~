@@ -1,6 +1,5 @@
 <h2><%= @photo.title %><h2>
 <img src="<%= @photo.url %>" alt="<%= @photo.title %>" width = "auto" height = "500px" />
-<p><%= @photo.caption %></p>
 <%= 
 if @photoIndex > 0
 	link_to "<<Previous", photo_path(@photos[@photoIndex - 1][:id])

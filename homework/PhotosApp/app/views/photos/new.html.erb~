@@ -1,19 +1,5 @@
 <h1>Add a new photo!<h1>
 
-<%= form_tag "/photos" do %>
-	<p>
-		<%= label_tag "Title" %>
-		<%= text_field_tag "title" %>
-	</p>
-	<p>
-		<%= label_tag "Image URL" %>
-		<%= text_field_tag "url" %>
-	</p>
-	<p>
-		<%= label_tag "Caption" %>
-		<%= text_field_tag "caption" %>
-	</p>
-	<%= submit_tag %>
-<% end %>
+<%= render "form" do %>
 
 <%= link_to "Home", photos_path %>

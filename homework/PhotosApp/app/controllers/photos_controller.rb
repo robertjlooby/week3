@@ -6,21 +6,21 @@ class PhotosController < ApplicationController
 	end
 
 	def new
+		@photo = Photo.new
 	end
 	
 	def create
-		@photo = Photo.new
-		@photo.title = params[:title]
-		@photo.url = params[:url]
-		@photo.caption = params[:caption]
-		@photo.save
-		flash[:info] = "You've added a photo!"
-		redirect_to photos_path
+		@photo = Photo.create(params[:photo])
+		redirect_to photo_path(@photo.id)
 	end
 	
 	def show
 		@photos = Photo.all
 		@photo = Photo.find_by_id(params[:id])
+		if @photo == nil then
+			flash[:info] = "Invalid photo ID #{params[:id]}!"
+			redirect_to photos_path
+		end
 		@photoIndex = @photos.index(@photo)
 		@num = @photos.count
 	end
@@ -31,12 +31,8 @@ class PhotosController < ApplicationController
 	
 	def update
 		@photo = Photo.find_by_id(params[:id])
-		@photo.title = params[:title]
-		@photo.url = params[:url]
-		@photo.caption = params[:caption]
-		@photo.save
-		flash[:info] = "You've updated photo " + params[:id] + "!"
-		redirect_to photos_path
+		@photo.update_attributes(params[:photo])
+		redirect_to photo_path(params[:id])
 	end
 	
 	def destroy
